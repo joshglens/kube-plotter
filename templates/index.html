@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <style type="text/css">
+      h1 {
+        text-transform: uppercase;
+		font-family: Calibri, sans-serif
+      }
+	  h3 {
+		font-family: Calibri, sans-serif
+	  }
+	  p {
+		font-family: Calibri, sans-serif
+	  }
+	  pre {
+		font-family: Calibri, sans-serif
+	  }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Homepage</h1>
+      <h3>How to use this site:</h3>
+	  <p> There are 3 main forms of functionality:</p>
+	  <pre>
+
+/plot_3d_contour/int:bound_min/int:bound_max/path:equation
+
+In this case, bound_min and bound_max represent the minimum and maximum x and y values.
+
+Example input: /plot_3d_contour/-5/5/3x^2+2y^3
+
+
+/plot_3d_surface/int:bound_min/int:bound_max/path:equation
+Similarly to the previous one, bound_min and bound_max represent the minimum and maximum x and y values.
+
+Example input: /plot_3d_surface/-5/5/1x^4+3y^1
+
+
+/plot_kde/string:color/path:data
+
+Example input: /plot_kde/blue/1,2,6,3,4,2,6,3,4,3,2,-5,-2
+
+	 </pre>
+    </div>
+  </body>
+</html>
